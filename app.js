@@ -10,6 +10,7 @@ var usersRouter = require('./routes/users');
 var mbgRouter = require('./routes/mbg');
 var kipkRouter = require('./routes/kipk');
 var kategoriRouter = require('./routes/kategori');
+var biodataRouter = require('./routes/biodata');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use('/users', usersRouter);
 app.use('/mbg', mbgRouter);
 app.use('/kipk', kipkRouter);
 app.use('/kategori', kategoriRouter);
+app.use('/biodata', biodataRouter);
 
 
 // catch 404 and forward to error handler
